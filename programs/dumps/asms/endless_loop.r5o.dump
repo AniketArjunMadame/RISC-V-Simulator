@@ -1,0 +1,12 @@
+
+bins/asms/endless_loop.r5o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80002000 <main>:
+80002000:	00100093          	li	ra,1
+
+80002004 <loop>:
+80002004:	001080b3          	add	ra,ra,ra
+80002008:	ffdff06f          	j	80002004 <loop>

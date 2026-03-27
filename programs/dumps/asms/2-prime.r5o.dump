@@ -1,0 +1,40 @@
+
+bins/asms/2-prime.r5o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80002000 <main>:
+80002000:	00006317          	auipc	t1,0x6
+80002004:	00030313          	mv	t1,t1
+80002008:	00032283          	lw	t0,0(t1) # 80008000 <a>
+8000200c:	00100393          	li	t2,1
+80002010:	0253dc63          	bge	t2,t0,80002048 <not_prime>
+80002014:	00200393          	li	t2,2
+80002018:	02728463          	beq	t0,t2,80002040 <is_prime>
+8000201c:	0012fe13          	and	t3,t0,1
+80002020:	020e0463          	beqz	t3,80002048 <not_prime>
+80002024:	00300313          	li	t1,3
+
+80002028 <check_loop>:
+80002028:	026303b3          	mul	t2,t1,t1
+8000202c:	0072ca63          	blt	t0,t2,80002040 <is_prime>
+80002030:	0262ee33          	rem	t3,t0,t1
+80002034:	000e0a63          	beqz	t3,80002048 <not_prime>
+80002038:	00230313          	add	t1,t1,2
+8000203c:	fedff06f          	j	80002028 <check_loop>
+
+80002040 <is_prime>:
+80002040:	00100513          	li	a0,1
+80002044:	0080006f          	j	8000204c <halt>
+
+80002048 <not_prime>:
+80002048:	fff00513          	li	a0,-1
+
+8000204c <halt>:
+8000204c:	0000006f          	j	8000204c <halt>
+
+Disassembly of section .data:
+
+80008000 <a>:
+80008000:	0000000a          	.word	0x0000000a

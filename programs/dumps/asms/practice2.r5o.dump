@@ -1,0 +1,8 @@
+
+bins/asms/practice2.r5o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80002000 <main>:
+80002000:	0000006f          	j	80002000 <main>

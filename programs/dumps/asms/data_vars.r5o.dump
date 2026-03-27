@@ -1,0 +1,34 @@
+
+bins/asms/data_vars.r5o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80002000 <main>:
+80002000:	00006097          	auipc	ra,0x6
+80002004:	00008093          	mv	ra,ra
+80002008:	0000a583          	lw	a1,0(ra) # 80008000 <myvar1>
+8000200c:	00006117          	auipc	sp,0x6
+80002010:	ff810113          	add	sp,sp,-8 # 80008004 <myvar2>
+80002014:	00012603          	lw	a2,0(sp)
+80002018:	00006197          	auipc	gp,0x6
+8000201c:	ff018193          	add	gp,gp,-16 # 80008008 <myarr>
+80002020:	0001a683          	lw	a3,0(gp) # 80008818 <__global_pointer$>
+80002024:	0041a703          	lw	a4,4(gp) # 8000881c <__global_pointer$+0x4>
+
+80002028 <halt>:
+80002028:	0000006f          	j	80002028 <halt>
+
+Disassembly of section .data:
+
+80008000 <myvar1>:
+80008000:	0000c001          	.word	0x0000c001
+
+80008004 <myvar2>:
+80008004:	0000c0de          	.word	0x0000c0de
+
+80008008 <myarr>:
+80008008:	0000feed          	.word	0x0000feed
+8000800c:	0000deed          	.word	0x0000deed
+80008010:	0000deaf          	.word	0x0000deaf
+80008014:	0000d00d          	.word	0x0000d00d

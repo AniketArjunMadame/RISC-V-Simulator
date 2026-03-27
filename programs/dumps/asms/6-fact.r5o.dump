@@ -1,0 +1,43 @@
+
+bins/asms/6-fact.r5o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+80002000 <main>:
+80002000:	00006297          	auipc	t0,0x6
+80002004:	00028293          	mv	t0,t0
+80002008:	0002a503          	lw	a0,0(t0) # 80008000 <n>
+8000200c:	008000ef          	jal	80002014 <fact>
+80002010:	0400006f          	j	80002050 <halt>
+
+80002014 <fact>:
+80002014:	ff010113          	add	sp,sp,-16
+80002018:	00112623          	sw	ra,12(sp)
+8000201c:	00a12423          	sw	a0,8(sp)
+80002020:	00100293          	li	t0,1
+80002024:	00a2a3b3          	slt	t2,t0,a0
+80002028:	00039663          	bnez	t2,80002034 <recurse>
+
+8000202c <base_case>:
+8000202c:	00100513          	li	a0,1
+80002030:	0140006f          	j	80002044 <end_fact>
+
+80002034 <recurse>:
+80002034:	fff50513          	add	a0,a0,-1
+80002038:	fddff0ef          	jal	80002014 <fact>
+8000203c:	00812303          	lw	t1,8(sp)
+80002040:	02a30533          	mul	a0,t1,a0
+
+80002044 <end_fact>:
+80002044:	00c12083          	lw	ra,12(sp)
+80002048:	01010113          	add	sp,sp,16
+8000204c:	00008067          	ret
+
+80002050 <halt>:
+80002050:	0000006f          	j	80002050 <halt>
+
+Disassembly of section .data:
+
+80008000 <n>:
+80008000:	00000006          	.word	0x00000006
