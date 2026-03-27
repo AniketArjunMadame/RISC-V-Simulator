@@ -1,0 +1,904 @@
+[INFO] Running: python3 ../src/simulate.py --start=0x80002000 ../programs/bins/asms/1-even.r5ob --num_insts=100 --proc=SingleCycleProcessor
+[INFO] Using SingleCycleProcessor
+[INFO] Start address: 0x80002000
+[INFO] Executable path: ../programs/bins/asms/1-even.r5ob
+[INFO] Number of instructions: 100
+[INFO] Started single cycle processor
+[INFO] [DEBUG] Fetching instruction at PC = 0x80002000
+[DEBUG] Fetched instruction 00006297 at 80002000
+[DEBUG] opcode=17, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 23, 'rs1': 0, 'rs2': 0, 'rd': 5, 'funct3': 0, 'funct7': 0, 'imm': 24576, 'op': 94208}
+[DEBUG] Operands: op1=2147491840, op2=24576
+[DEBUG] Executed op 17000 => result 2147516416
+[DEBUG] Execute result: op1=80002000, op2=00006000, result=80008000
+[OUT] 80002000 | next_pc=80002004 | x5=80008000 | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x80002004
+[DEBUG] Fetched instruction 00428293 at 80002004
+[DEBUG] opcode=13, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 19, 'rs1': 5, 'rs2': 0, 'rd': 5, 'funct3': 0, 'funct7': 0, 'imm': 4, 'op': 77824}
+[DEBUG] Operands: op1=2147516416, op2=4
+[DEBUG] Executed op 13000 => result 2147516420
+[DEBUG] Execute result: op1=80008000, op2=00000004, result=80008004
+[OUT] 80002004 | next_pc=80002008 | x5=80008004 | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x80002008
+[DEBUG] Fetched instruction 00006397 at 80002008
+[DEBUG] opcode=17, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 23, 'rs1': 0, 'rs2': 0, 'rd': 7, 'funct3': 0, 'funct7': 0, 'imm': 24576, 'op': 94208}
+[DEBUG] Operands: op1=2147491848, op2=24576
+[DEBUG] Executed op 17000 => result 2147516424
+[DEBUG] Execute result: op1=80002008, op2=00006000, result=80008008
+[OUT] 80002008 | next_pc=8000200c | x7=80008008 | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000200c
+[DEBUG] Fetched instruction ff838393 at 8000200c
+[DEBUG] opcode=13, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 19, 'rs1': 7, 'rs2': 0, 'rd': 7, 'funct3': 0, 'funct7': 0, 'imm': -8, 'op': 77824}
+[DEBUG] Operands: op1=2147516424, op2=-8
+[DEBUG] Executed op 13000 => result 2147516416
+[DEBUG] Execute result: op1=80008008, op2=-0000008, result=80008000
+[OUT] 8000200c | next_pc=80002010 | x7=80008000 | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x80002010
+[DEBUG] Fetched instruction 0003a503 at 80002010
+[DEBUG] opcode=03, funct3=2, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 3, 'rs1': 7, 'rs2': 0, 'rd': 10, 'funct3': 2, 'funct7': 0, 'imm': 0, 'op': 12800}
+[DEBUG] Operands: op1=2147516416, op2=0
+[DEBUG] Executed op 03200 => result 2147516416
+[DEBUG] Execute result: op1=80008000, op2=00000000, result=80008000
+[DEBUG] Load word from 80008000 => 00000005
+[OUT] 80002010 | next_pc=80002014 | x10=00000005 | mem[80008000] => 00000005
+[INFO] [DEBUG] Fetching instruction at PC = 0x80002014
+[DEBUG] Fetched instruction 00000513 at 80002014
+[DEBUG] opcode=13, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 19, 'rs1': 0, 'rs2': 0, 'rd': 10, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 77824}
+[DEBUG] Operands: op1=0, op2=0
+[DEBUG] Executed op 13000 => result 0
+[DEBUG] Execute result: op1=00000000, op2=00000000, result=00000000
+[OUT] 80002014 | next_pc=80002018 | x10=00000000 | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x80002018
+[DEBUG] Fetched instruction 02050263 at 80002018
+[DEBUG] opcode=63, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 99, 'rs1': 10, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 36, 'op': 405504}
+[DEBUG] Operands: op1=0, op2=0
+[DEBUG] Executed op 63000 => result True
+[DEBUG] Execute result: op1=00000000, op2=00000000, result=00000001
+[DEBUG] Branch taken to 8000203c
+[OUT] 80002018 | next_pc=8000203c | x?=00000000 | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] [DEBUG] Fetching instruction at PC = 0x8000203c
+[DEBUG] Fetched instruction 0000006f at 8000203c
+[DEBUG] opcode=6f, funct3=0, funct7=00
+[INFO] [DEBUG] Decoded = {'opcode': 111, 'rs1': 0, 'rs2': 0, 'rd': 0, 'funct3': 0, 'funct7': 0, 'imm': 0, 'op': 454656}
+[DEBUG] Operands: op1=2147491900, op2=0
+[DEBUG] Executed op 6f000 => result 2147491900
+[DEBUG] Execute result: op1=8000203c, op2=00000000, result=8000203c
+[DEBUG] JAL to 8000203c
+[OUT] 8000203c | next_pc=8000203c | x0=8000203c | mem[?]=00000000
+[INFO] Simulation complete: executed 100 instructions.
+[INFO] Statistics saved to stats.json
+[INFO] Simulation completed successfully
